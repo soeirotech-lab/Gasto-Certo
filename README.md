@@ -6,6 +6,10 @@ Este projeto foi criado com foco em aprendizado prático, explorando conceitos f
 
 ---
 
+## 🌐 Deploy
+
+👉 https://soeirotech-lab.github.io/Gasto-Certo/
+
 ## 🚀 Funcionalidades
 
 * ✅ Adicionar receitas e despesas
