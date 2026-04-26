@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de despesas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+
+      <main class="container">
+        <h1 class="titulo">Gasto Certo</h1>
+        <p class="subtitulo">Controle financeiro simples e eficiente</p>
+
+
+      <section class="balance-card">
+        <h4>Saldo atual</h4>
+        <h1 id="balance">R$ 0.00</h1> <!-- javascript - const balanceDisplay = document.querySelector("#balance"); -->
+      </section>
+
+      <section class="cards">
+        <div class="card income-card">
+          <h4>Receitas</h4>
+          <p id="money-plus">+ R$ 0.00</p> <!-- javascript - const incomeDisplay = document.querySelector("#money-plus"); -->
+        </div>
+
+        <div class="card expense-card">
+          <h4>Despesas</h4>
+          <p id="money-minus">- R$ 0.00</p>
+        </div>
+      </section>
+
+      <h3>Transações</h3>
+      <ul id="transactions" class="transactions"></ul>
+
+      <h3>Adicionar transação</h3>
+
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Nome</label>
+          <input type="text" id="text" placeholder="Nome da transação" />
+        </div>
+
+        <div class="form-control">
+          <label for="amount">
+            Valor
+            <small>negativo = despesa | positivo = receita</small>
+          </label>
+          <input type="number" id="amount" placeholder="Ex: -20 ou 300" />
+        </div>
+
+        <button class="btn">Adicionar</button>
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
