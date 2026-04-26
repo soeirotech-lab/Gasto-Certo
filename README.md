@@ -51,21 +51,21 @@ Este projeto foi criado com foco em aprendizado prático, explorando conceitos f
 
 ```mermaid
 flowchart TD
-    A[Usuário preenche o formulário] --> B[JS captura submit]
-    B --> C{Campos válidos?}
+    A["Usuário preenche o formulário"] --> B["JS captura submit"]
+    B --> C{"Campos válidos?"}
 
-    C -- Não --> D[Exibe alerta]
-    C -- Sim --> E[Cria objeto da transação]
+    C -- "Não" --> D["Exibe alerta"]
+    C -- "Sim" --> E["Cria objeto da transação"]
 
-    E --> F[Adiciona no array transactions]
-    F --> G[Salva no localStorage]
-    G --> H[Executa init()]
+    E --> F["Adiciona no array transactions"]
+    F --> G["Salva no localStorage"]
+    G --> H["Executa init"]
 
-    H --> I[Renderiza lista no DOM]
-    H --> J[Atualiza saldo]
+    H --> I["Renderiza lista no DOM"]
+    H --> J["Atualiza saldo"]
 
-    I --> K[Usuário remove transação]
-    K --> L[Filtra array por ID]
+    I --> K["Usuário remove transação"]
+    K --> L["Filtra array por ID"]
     L --> G
 ```
 
